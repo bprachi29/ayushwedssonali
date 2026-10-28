@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f4ed">
+
+  <title>Wedding Invitation | Ayush & Sonali</title>
+  <meta name="description"
+        content="Join Ayush and Sonali as they begin their forever.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f8f4ed;
+      --paper: #fffdf9;
+      --green: #536653;
+      --gold: #ae8b55;
+      --ink: #37382f;
+      --muted: #77766c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+    }
+
+    .hero {
+      min-height: 90vh;
+      padding: 65px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #ffffff 0%, transparent 68%),
+        var(--cream);
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: 650px;
+      padding: 45px 20px;
+      border: 1px solid #d9c9a8;
+      outline: 1px solid #d9c9a8;
+      outline-offset: 7px;
+      background: var(--paper);
+    }
+
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+
+    .ornament {
+      color: var(--gold);
+      font-size: 28px;
+      margin: 20px 0;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: clamp(48px, 11vw, 78px);
+      line-height: 1.02;
+      margin: 12px 0;
+    }
+
+    .ampersand {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .hero-date {
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-top: 26px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 65px 22px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: clamp(35px, 7vw, 48px);
+      margin: 8px 0 16px;
+    }
+
+    .intro {
+      max-width: 570px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .events {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .event-card {
+      padding: 28px 18px;
+      background: var(--paper);
+      border: 1px solid #e4d9c7;
+    }
+
+    .event-card h3 {
+      color: var(--green);
+      font-size: 31px;
+      margin: 0 0 10px;
+    }
+
+    .event-card p {
+      font-size: 13px;
+      margin: 6px 0;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .count-box {
+      min-width: 65px;
+      padding: 12px 8px;
+      background: var(--paper);
+      border: 1px solid #e4d9c7;
+    }
+
+    .count-box strong {
+      display: block;
+      color: var(--green);
+      font-size: 23px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .count-box span {
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px 4px;
+      padding: 13px 22px;
+      background: var(--green);
+      border: 1px solid var(--green);
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .button.outline {
+      background: transparent;
+      color: var(--green);
+    }
+
+    .venue {
+      background: #eeeadf;
+    }
+
+    .ganesh-header {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: serif;
+}
+
+.ganesh-header img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.ganesh-header h2 {
+  font-size: 21px;
+  margin: 8px 0 12px;
+}
+
+.ganesh-header p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+    .footer {
+      padding: 35px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .couple-photo {
+    width: 100%;
+    max-width: 340px;
+    margin: 28px auto;
+     aspect-ratio: 4 / 5;
+     overflow: hidden;
+     border: 5px solid #fffdf9;
+    outline: 1px solid #d9c9a8;
+    }
+
+.couple-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+    @media (max-width: 560px) {
+      .hero {
+        min-height: 80vh;
+        padding: 30px 17px;
+      }
+
+      .hero-inner {
+        padding: 38px 15px;
+      }
+
+      .events {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 48px 20px;
+      }
+
+      .countdown {
+        gap: 6px;
+      }
+
+      .count-box {
+        flex: 1;
+        min-width: 0;
+        padding: 10px 3px;
+      }
+
+      .count-box strong {
+        font-size: 21px;
+      }
+    }
+.events {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 35px auto 0;
+}
+
+.event-date-group {
+  width: 100%;
+  margin: 0 0 36px;
+}
+
+.event-date, 
+.event-date span  {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 56px !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  line-height: 1.1;
+}
+
+.event-date {
+  text-align: center;
+  color: var(--green);
+  margin: 0 0 18px;
+}
+
+@media (max-width: 560px) {
+  .event-date,
+  .event-date span {
+    font-size: 42px !important;
+  }
+}
+
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+.event-card {
+  min-width: 0;
+  padding: 24px 16px;
+  background: var(--paper);
+  border: 1px solid #e4d9c7;
+  text-align: center;
+}
+
+.event-card h3 {
+  color: var(--green);
+  font-size: clamp(20px, 3vw, 31px);
+  line-height: 1.2;
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.event-card p {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+@media (max-width: 560px) {
+  .event-date {
+    font-size: 28px;
+  }
+
+  .event-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .event-card {
+    padding: 18px 8px;
+  }
+
+  .event-card h3 {
+    font-size: 20px;
+  }
+
+  .event-card p {
+    font-size: 11px;
+  }
+}
+
+    
+/* Wedding photo gallery */
+.gallery-section {
+  padding: 64px 20px;
+  background: #fbf8f2;
+  text-align: center;
+}
+
+.section-heading {
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.section-heading h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(36px, 5vw, 50px);
+  font-weight: 500;
+  margin: 0 0 12px;
+  color: #554536;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.gallery-item {
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Keep the original photo proportions */
+.gallery-item img {
+   display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Featured image spans two columns */
+.gallery-item.featured {
+   grid-column: auto;
+  grid-row: auto;
+}
+
+.gallery-item.featured img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.015);
+}
+
+.gallery-footer {
+  margin: 30px auto 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #9b7b53;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .gallery-section {
+    padding: 44px 14px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .gallery-item.featured {
+    grid-column: span 2;
+  }
+  
+  
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- HERO / MAIN INVITATION -->
+  <header class="hero">
+  
+    <div class="hero-inner">
+      
+        <div class="ganesh-header">
+    <img src="images/ganesha.jpg" alt="Lord Ganesha">
+
+    <h2>॥ श्री गणेशाय नमः ॥</h2>
+
+    <p>
+      विघ्न हरण मंगल करण, श्री गणपति महाराज।<br>
+      प्रथम निमंत्रण आपको, पूरण करियो काज।
+    </p>
+  </div>
+      <div class="eyebrow">Together with our families</div>
+      <div class="ornament">✦ ❦ ✦</div>
+      <div class="couple-photo">
+  <img
+    src="images/couple.jpg"
+    alt="Ayush and Sonali together"
+  >
+</div>  
+      <p>Joyfully invite you to celebrate the wedding of</p>
+  
+      <h1>
+        Ayush<br>
+        <span class="ampersand">&</span><br>
+        Sonali
+      </h1>
+
+      <div class="ornament">— ❦ —</div>
+
+      <p>
+        Two hearts, two families,<br>
+        one beautiful beginning.
+      </p>
+
+      <div class="hero-date" id="heroDate">
+        21 November 2026 · Jaipur, Rajasthan
+      </div>
+    </div>
+  </header>
+
+  <!-- COUNTDOWN -->
+  <section class="section">
+    <div class="eyebrow">The countdown begins</div>
+    <h2 class="section-title">Until the "Sacred Pheras"</h2>
+
+    <div class="countdown" id="countdown"
+         aria-live="polite">
+      <div class="count-box">
+        <strong>--</strong><span>Days</span>
+      </div>
+      <div class="count-box">
+        <strong>--</strong><span>Hours</span>
+      </div>
+      <div class="count-box">
+        <strong>--</strong><span>Minutes</span>
+      </div>
+      <div class="count-box">
+        <strong>--</strong><span>Seconds</span>
+      </div>
+    </div>
+
+    <p class="intro">
+      Your presence will make our special day
+      even more meaningful. We cannot wait
+      to celebrate with you.
+    </p>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+  <div class="section-heading">
+    <p class="eyebrow">A LITTLE LOOK INTO OUR STORY</p>
+    <h2>Our Moments</h2>
+    <div class="ornament">✦ ❦ ✦</div>
+    <p class="gallery-intro">
+      A few memories, a thousand emotions,
+      and a beautiful forever ahead.
+    </p>
+  </div>
+
+  <div class="photo-gallery">
+
+
+    <figure class="gallery-item">
+      <img src="images/IMG_2437.jpg"
+           loading="lazy">
+    </figure>
+    <figure class="gallery-item">
+      <img src="images/IMG_5113.JPEG"
+           alt="The couple together"
+           loading="lazy">
+    </figure>
+    <figure class="gallery-item">
+      <img src="images/IMG_8909.jpg"
+           alt="The couple together"
+           loading="lazy">
+    </figure>
+    <figure class="gallery-item">
+      <img src="images/IMG_3137.jpg"
+           alt="The couple together"
+           loading="lazy">
+    </figure>
+  </div>
+
+  <p class="gallery-footer">
+    And so our next chapter begins...
+  </p>
+</section>
+
+  <!-- EVENT SCHEDULE -->
+  <section class="section">
+    <div class="eyebrow">Save the date</div>
+    <h2 class="section-title">Wedding Celebrations</h2>
+
+    <p class="intro">
+      Please join us for these special moments.
+    </p>
+
+   <div class="events">
+  <div class="event-date-group">
+    <h3 class="event-date">
+    <span>20</span> <span>November</span>
+</h3>
+    <div class="event-cards">
+      <article class="event-card">
+        <h3>Phoolo ki haldi & Carnival</h3>
+        <p>2:30 PM onwards</p>
+      </article>
+      <article class="event-card">
+        <h3>Sangeet</h3>
+        <p>8:00 PM onwards</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="event-date-group">
+    <h3 class="event-date">
+      <span>21</span> <span>November</span>
+    </h3>
+    <div class="event-cards">
+      <article class="event-card">
+        <h3>Baraat</h3>
+        <p>12:30 PM onwards</p>
+      </article>
+      <article class="event-card">
+        <h3>Reception</h3>
+        <p>7:30 PM onwards</p>
+      </article>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- VENUE -->
+  <section class="section venue">
+    <div class="eyebrow">We look forward to seeing you</div>
+    <h2 class="section-title">The Venue</h2>
+
+    <p><strong>Regenta Anantam Resort</strong></p>
+    <p>Khatu Shyam Ji, Rajasthan</p>
+
+    <a class="button" id="mapButton"
+       href="https://maps.google.com/?q=Regenta+Anantam+Resort+Khatu+Shyam+Ji"
+       target="_blank" rel="noopener noreferrer">
+      Get Directions
+    </a>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section">
+    <div class="eyebrow">Kindly respond</div>
+    <h2 class="section-title">Will You Join Us?</h2>
+
+    <p class="intro">
+      Please let us know if you can be part
+      of our celebration.
+    </p>
+
+    <a class="button" id="rsvpButton"
+       href="https://forms.gle/Fek9uVeXYXxmsaW28"
+       target="_blank" rel="noopener noreferrer">
+      RSVP Here
+    </a>
+
+    <p class="intro">
+      We look forward to celebrating with you!
+    </p>
+  </section>
+
+  <!-- WHATSAPP SHARING -->
+  <footer class="footer">
+    <p>With love, Ayush & Sonali</p>
+  </footer>
+
+  <script>
+    // Replace this with the wedding date and time.
+    // The offset +05:30 is for India Standard Time.
+    const weddingDate = new Date(
+      "2026-11-21T09:00:00+05:30"
+    );
+
+    function updateCountdown() {
+      const distance = weddingDate.getTime() - Date.now();
+      const countdown = document.getElementById("countdown");
+
+      if (distance <= 0) {
+        countdown.textContent =
+          "Today is the big day! Let the celebrations begin.";
+        return;
+      }
+
+      const days = Math.floor(distance / 86400000);
+      const hours = Math.floor(
+        (distance % 86400000) / 3600000
+      );
+      const minutes = Math.floor(
+        (distance % 3600000) / 60000
+      );
+      const seconds = Math.floor(
+        (distance % 60000) / 1000
+      );
+
+      const values = [days, hours, minutes, seconds];
+      const labels = ["Days", "Hours", "Minutes", "Seconds"];
+
+      countdown.innerHTML = values.map((value, index) => `
+        <div class="count-box">
+          <strong>${value}</strong>
+          <span>${labels[index]}</span>
+        </div>
+      `).join("");
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+  </script>
+
+</body>
+</html>
