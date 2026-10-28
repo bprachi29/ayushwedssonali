@@ -361,7 +361,7 @@
 }
 
 .hero-inner h1 {
-  margin-bottom: 1px !important;
+  margin-bottom: 4px !important;
 }
 
 .family-details {
@@ -380,8 +380,20 @@
 
 @media (max-width: 560px) {
   .family-details {
-    font-size: 14px;
-    line-height: 1.45;
+    margin: 4px auto 20px;
+    padding: 0 18px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--green);
+  }
+
+  .family-details p {
+    margin: 3px 0;
+    overflow-wrap: break-word;
   }
 }
 
